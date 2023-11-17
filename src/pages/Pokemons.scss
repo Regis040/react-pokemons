@@ -1,0 +1,17 @@
+.pokemons {
+   width: 200px ;
+}
+
+h3, h2, h4 {
+    text-align: center;
+}
+
+.pokemonsStyle {
+    margin: auto;
+    background-color: aqua;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    flex-wrap: wrap;
+}
