@@ -1,4 +1,6 @@
 import './Pokemons.scss'
+import PokemonDetailPage from './PokemonDetailPage.jsx';
+import { Link } from "react-router-dom";
 
 function Pokemons () {
     const pokemons = [
@@ -73,10 +75,10 @@ function Pokemons () {
             <div className='pokemonsStyle'>
                 {pokemons.map((pokemon) => {
                     return (
-                        <>
-                            <h4>{pokemon.name}</h4>
-                            <img class="pokemons" alt="les pokemons" src={pokemon.img} />
-                        </>
+                        <Link to={"/pokemon/" + pokemon.id + "/detail"}>                            
+                                <h4>{pokemon.name}</h4>
+                                <img class="pokemons" alt="les pokemons" src={pokemon.img} />                            
+                        </Link>
                     );
                 })}
             </div>

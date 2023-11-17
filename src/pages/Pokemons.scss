@@ -15,3 +15,17 @@ h3, h2, h4 {
     align-items: center;   
     flex-wrap: wrap;
 }
+
+.pokemonChoisi {
+    width: 600px;
+    margin: auto;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pokemonChoisiImg {
+    width: 300px;
+    margin: auto;   
+}
